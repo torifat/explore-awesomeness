@@ -3,10 +3,10 @@ html
   head
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
-    title Hello World
+    title Explore Awesomeness
 
     link(href='http://fonts.googleapis.com/css?family=Open+Sans:300,600', rel='stylesheet', type='text/css')
-    link(href='http://fonts.googleapis.com/css?family=Ubuntu', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Handlee', rel='stylesheet', type='text/css')
 
     // build:css styles/styles.css
     //- Check out 'src/bower_components/prism/themes/' for available themes
@@ -19,8 +19,8 @@ html
     article
 
       section
-        h2 Explore
-        h1 Awesomeness
+        h2.alt Explore
+        h1.alt Awesomeness
 
       section.logo.logo--bower(data-bespoke-state='bower')
 
@@ -63,7 +63,7 @@ html
           code.
             {
               "name": "bower",
-              "version": "0.0.0",
+              "version": "0.0.1",
               "authors": [
                 "Rifat Nabi <to.rifat@gmail.com>"
               ],
@@ -73,12 +73,35 @@ html
               }
             }
 
+      section(data-bespoke-state='bower')
+        h2 List Packages
+        pre.language-bash
+          code $ bower list
+
       section.logo.logo--jshint(data-bespoke-state='white')
 
       section(data-bespoke-state='jshint')
         h2 Installation
         pre.language-bash
           code $ npm install -g jshint
+
+
+      section(data-bespoke-state='jshint')
+        h2 Usage
+        pre.language-bash
+          code $ jshint source.js
+
+      section(data-bespoke-state='jshint')
+        h2 .jshintrc
+        pre.language-javascript
+          code.
+            {
+              "indent": 2,
+              "undef": true,
+              "unused": true,
+              "strict": true,
+              "eqeqeq": true
+            }
 
       section(data-bespoke-state='smile')
         h1.shadow DEMO
@@ -186,7 +209,23 @@ html
         h1.shadow DEMO
 
       section
-        h1 Thank You
+        h2.bullet Honorable Mention
+        ul
+          li
+            a(href='https://github.com/taptapship/wiredep') wiredep
+          li
+            a(href='http://www.senchalabs.org/connect/') connect
+          li
+            a(href='https://github.com/digisfera/useref') useref
+          li
+            a(href='https://github.com/sindresorhus/pageres') pageres
+          li
+            a(href='https://github.com/giakki/uncss') uncss
+          li
+            a(href='https://github.com/addyosmani/psi') psi
+
+      section
+        h1.alt.white Thank You
         h3
           a(href='https://twitter.com/rifat') @rifat
         img.avatar.avatar--small(src='images/profile.jpg')
